@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <i class="fa-solid fa-caret-down" style="color: white;"></i>
+            <i class="fa-solid fa-x" style="color: white; display: none;"></i>
+            Now Playing
+            <i class="fa-solid fa-ellipsis" style="color: white;"></i>
+        </div>
+        <div class="item2">
+            <img src="https://i.ytimg.com/vi/kEjLYHtgNe0/maxresdefault.jpg" alt="">
+        </div>
+        <div class="item3">
+            <h3 class="music-name">Main hoon na</h3>
+            <h4 class="music-album">Album</h4>
+        </div>
+        <div class="item4">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+        </div>
+        <div class="item5">
+            <span class="current">0:00</span>
+            <span class="duration">0:00</span>
+        </div>
+        <div class="item6">
+            <button><i id="repeat-button" class="material-icons" style="color: white;">repeat</i></button>
+            <i class="fa-solid fa-backward-step color" id="prev"></i>
+            <div class="play-button">
+                <div class="play-btn">
+                    <i class="fa-solid fa-play" style="color: white;"></i>
+                </div>
+                <div class="pause-btn">
+                    <i class="fa-solid fa-pause" style="color: white;"></i>
+                </div>
+            </div>
+            <i class="fa-solid fa-forward-step color" id="next"></i>
+            <button><i id="music-list" class="material-icons" style="color: white;">queue_music</i></button>
+        </div>
+        <div class=" list-music">
+            <div class="header">
+                <div class="row">
+                    <i id="music-list" class="material-icons" style="color: white;">queue_music</i>
+                    <span style="color: white;">Music</span>
+                </div>
+                <i class="material-icons" id="close">close</i>
+            </div>
+            <ul>
+            
+            </ul>
+        </div>
+    </div>
+    <script src="./musicList.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
