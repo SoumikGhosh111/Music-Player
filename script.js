@@ -22,8 +22,8 @@ window.addEventListener("load", ()=>{
 function loadMusic(indexNum){ 
     musicName.innerText = songs[indexNum-1].name; 
     musicAlbum.innerText = songs[indexNum-1].album; 
-    musicImg.src = `images/${songs[indexNum -1].image}`
-    mainAudio.src = `songs/${songs[indexNum - 1].path}`; 
+    musicImg.src = songs[indexNum -1].image;
+    mainAudio.src = songs[indexNum - 1].path; 
 }
 
 function playMusic(){ 
